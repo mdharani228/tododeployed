@@ -11,7 +11,7 @@ function Login() {
     e.preventDefault();
     setLoginMessage('Login with google');
     try {
-     const res = await axios.post('http://localhost:5000/auth/login', { email, password }, { withCredentials: true });
+     const res = await axios.post('http://localhost:5000//auth/login', { email, password }, { withCredentials: true });
       if (res.status === 200) {
         window.location.href = '/todo';
       }
